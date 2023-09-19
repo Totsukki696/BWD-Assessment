@@ -1,3 +1,9 @@
+@media (max-width: 769px) {
+  .slider {
+    overflow-x: visible;
+  }
+}
+
 @media (max-width: 426px) {
   .nav-left {
     justify-self: start;
@@ -8,6 +14,11 @@
   .cart-total {
     gap: 1rem;
   }
+
+  .slider {
+    overflow-x: visible;
+  }
+
   .alert-container {
     margin-top: -2rem;
     margin-right: 1rem;
