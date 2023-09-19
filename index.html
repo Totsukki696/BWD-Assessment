@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="screen-sizes.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Caravan</title>
+    <link
+      rel="shortcut icon"
+      href="./images/caravan-alt.svg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="./index.html" class="nav-left">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            id="Layer_1"
+            data-name="Layer 1"
+            viewBox="0 0 24 24"
+            width="30"
+            fill="white"
+            class="icon-header  "
+          >
+            <path
+              d="M24,19.5A1.5,1.5,0,0,1,22.5,21h-7a1.5,1.5,0,0,1,0-3H20V5.5A2.5,2.5,0,0,0,17.5,3H5.5A2.5,2.5,0,0,0,3,5.5V16a1.764,1.764,0,0,0,.533,1.338,1.5,1.5,0,0,1-2.066,2.176A4.718,4.718,0,0,1,0,16V5.5A5.506,5.506,0,0,1,5.5,0h12A5.506,5.506,0,0,1,23,5.5V18.086A1.5,1.5,0,0,1,24,19.5ZM8.5,17a3.5,3.5,0,0,0,0,7A3.5,3.5,0,0,0,8.5,17Zm8-5A1.5,1.5,0,0,0,18,10.5v-2A1.5,1.5,0,0,0,16.5,7h-2A1.5,1.5,0,0,0,13,8.5v2A1.5,1.5,0,0,0,14.5,12Zm-7,0A1.5,1.5,0,0,0,11,10.5v-2A1.5,1.5,0,0,0,9.5,7h-3A1.5,1.5,0,0,0,5,8.5v2A1.5,1.5,0,0,0,6.5,12Z"
+            />
+          </svg>
+          <h1>Caravan</h1>
+        </a>
+        <div id="cart" class="nav-right">
+          <svg
+            fill="white"
+            xmlns="http://www.w3.org/2000/svg"
+            id="Filled"
+            viewBox="0 0 24 24"
+            width="2rem"
+            class="icon-header"
+          >
+            <path
+              d="M22.713,4.077A2.993,2.993,0,0,0,20.41,3H4.242L4.2,2.649A3,3,0,0,0,1.222,0H1A1,1,0,0,0,1,2h.222a1,1,0,0,1,.993.883l1.376,11.7A5,5,0,0,0,8.557,19H19a1,1,0,0,0,0-2H8.557a3,3,0,0,1-2.82-2h11.92a5,5,0,0,0,4.921-4.113l.785-4.354A2.994,2.994,0,0,0,22.713,4.077Z"
+            />
+            <circle cx="7" cy="22" r="2" />
+            <circle cx="17" cy="22" r="2" />
+          </svg>
+          <div class="badge hidden">
+            <p class="badge-count">1</p>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="layout">
+      <div class="slider-container">
+        <h1>Top Picks</h1>
+        <ul class="slider"></ul>
+      </div>
+    </section>
+    <div></div>
+    <div class="browse-all layout">
+      <hr />
+      <h1>Browse</h1>
+      <ul class="browse-selection p-0"></ul>
+    </div>
+    <script type="module" src="./constant.js"></script>
+    <div class="alert-container fixed">
+      <div class="alert alert-success hidden">
+        <div class="icon__wrapper">
+          <svg
+            width="1rem"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 12.6111L8.92308 17.5L20 6.5"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <p class="alert-text">Successfully added to cart!</p>
+        <span class="close"
+          ><svg
+            width="1rem"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="12" cy="12" r="10" stroke="white" stroke-width="1.5" />
+            <path
+              d="M14.5 9.50002L9.5 14.5M9.49998 9.5L14.5 14.5"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            /></svg
+        ></span>
+      </div>
+    </div>
+    <div class="cart-overlay">
+      <div class="overlay-dummy"></div>
+      <div class="overlay-content">
+        <span class="overlay-header">
+          <h1>Cart Details</h1>
+          <img class='icon close' src="./images/close-svgrepo-com.svg" alt=""/>
+          </span>
+        </span>
+        <hr />
+        <div class="cart-details">
+          <div class="cart-grid grid-header">
+            <div></div>
+            <div>Name</div>
+            <div>Price</div>
+            <div>Qty</div>
+            <div>Subtotal</div>
+          </div>
+          <div class="grid-content"></div>
+        </div>
+        <div class="overlay-footer">
+          <div class="cart-total">
+            <div>Total</div>
+            <div class="total">₱0</div>
+          </div>
+          <button type="button" class="btn checkout-btn">Checkout</button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
