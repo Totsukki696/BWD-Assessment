@@ -168,9 +168,9 @@ p {
   justify-content: center;
   align-items: center;
 }
+
 .overlay-content {
   width: 60rem;
-  /* height: 70%; */
   background: white;
   padding: 2rem;
   z-index: 10;
@@ -271,11 +271,8 @@ p {
 }
 
 .checkout-btn {
-  /* justify-self: end; */
   width: 10rem;
   place-self: end;
-  /* margin-right: 3rem; */
-  /* align-self: end; */
 }
 /* alert styles */
 :root {
@@ -382,6 +379,10 @@ p {
   transform: translateY(-0.1rem);
   transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
   cursor: pointer;
+}
+
+.mt-2 {
+  margin-top: 1rem;
 }
 
 .layout {

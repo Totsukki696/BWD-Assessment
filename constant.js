@@ -23,4 +23,12 @@ export const SELECTION = [
     url: "./images/utensils-frying-pan.jpg",
     urlSmall: "./images/utensils-frying-pan-small.webp",
   },
+  {
+    id: 4,
+    name: "COOK-PAL Carbon Steel Deep Fry Pan",
+    price: 4392.0,
+    description: `"Premium rust-resistant cookware"`,
+    url: "./images/utensils-frying-pan.jpg",
+    urlSmall: "./images/utensils-frying-pan-small.webp",
+  },
 ];

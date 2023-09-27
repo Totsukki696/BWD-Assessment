@@ -116,6 +116,7 @@ cart.addEventListener("click", (_) => {
     cartOverlay.style.display = "none";
     localStorage.setItem("cart", JSON.stringify([]));
     displayBadge();
+    cartTotal.textContent = `₱0`;
   });
 });
 
